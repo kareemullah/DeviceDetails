@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+		 android:layout_margin="10dip" android:paddingBottom="10dip"
+	android:layout_gravity="center_vertical" android:background="@drawable/custom_alert_bg">
+
+       <TextView
+        android:id="@+id/enteruserdetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dip"
+		android:gravity="center"
+		android:textColor="@color/black"
+		android:textSize="20dip"
+		android:textStyle="bold"
+        android:text="@string/enter_user_details" />
+    
+    <TextView
+        android:id="@+id/enter_user_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/enter_user_phone"
+        android:layout_below="@+id/enteruserdetails"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/enter_user_car"
+        android:textColor="@color/white" />
+    <EditText
+        android:id="@+id/window_edit_user_car"
+        android:layout_width="160dip"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/enter_user_car"
+        android:layout_alignBaseline="@+id/enter_user_car"
+        android:layout_alignLeft="@+id/window_edit_user_phone"
+        android:layout_alignBottom="@+id/enter_user_car">
+    </EditText>
+
+    <TextView android:id="@+id/enter_user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_user_car"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="@string/Enter_user_phone" />
+     <EditText
+        android:id="@+id/window_edit_user_phone"
+        android:layout_width="160dip"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:layout_toRightOf="@+id/enter_user_phone"
+        android:layout_alignBaseline="@+id/enter_user_phone"
+        android:layout_alignBottom="@+id/enter_user_phone"
+        android:layout_alignLeft="@+id/signup_phone_edit">
+    </EditText>
+
+    <TextView
+        android:id="@+id/enter_user_bike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/enter_user_phone"
+        android:layout_alignRight="@+id/enter_user_phone"
+        android:layout_below="@+id/enter_user_phone"
+        android:layout_marginTop="20dp"
+        android:text="@string/enter_user_bike"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/window_edit_user_bike"
+        android:layout_width="160dip"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/enter_user_bike"
+        android:layout_alignBottom="@+id/enter_user_bike"
+        android:layout_alignLeft="@+id/window_edit_user_phone"
+        android:layout_toRightOf="@+id/enter_user_bike"
+        android:inputType="text" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/alert_ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+		android:layout_marginLeft="80dp"
+        android:layout_marginBottom="180dp"
+        android:text="@string/adduserdetails_save" />
+    <Button 
+        android:id="@+id/alert_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/alert_ok_button"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="180dp"
+        android:text="@string/adduserdetails_cancel" />
+
+</RelativeLayout>

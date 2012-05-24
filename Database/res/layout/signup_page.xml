@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hatshuana_bg" >
+
+    <TextView
+        android:id="@+id/enterdetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+		android:gravity="center"
+		android:textColor="@color/black"
+		android:textSize="20dip"
+		android:textStyle="bold"
+        android:text="@string/enter_details" />
+    
+    <TextView
+        android:id="@+id/enter_signup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/enter_signup_password"
+        android:layout_below="@+id/enterdetails"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/enter_name"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/signup_name_edit"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/enter_signup_name"
+        android:layout_alignBaseline="@+id/enter_signup_name"
+        android:layout_alignLeft="@+id/signup_phone_edit"
+        android:layout_alignBottom="@+id/enter_signup_name">
+    </EditText>
+
+    <TextView android:id="@+id/enter_signup_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_signup_name"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="@string/Enter_pass" />
+     <EditText
+        android:id="@+id/signup_password_edit"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" 
+        android:layout_toRightOf="@+id/enter_signup_password"
+        android:layout_alignBaseline="@+id/enter_signup_password"
+        android:layout_alignBottom="@+id/enter_signup_password"
+        android:layout_alignLeft="@+id/signup_phone_edit">
+    </EditText>
+
+    <TextView
+        android:id="@+id/enter_signup_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/enter_signup_password"
+        android:layout_alignRight="@+id/enter_signup_password"
+        android:layout_below="@+id/enter_signup_password"
+        android:layout_marginTop="30dp"
+        android:text="@string/Enter_address"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/signup_address_edit"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/enter_signup_address"
+        android:layout_alignBaseline="@+id/enter_signup_address"
+        android:layout_alignBottom="@+id/enter_signup_address"
+        android:layout_alignLeft="@+id/signup_phone_edit" >
+    </EditText>
+
+    <TextView android:id="@+id/enter_signup_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_signup_address"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="@string/Enter_phone" />
+    <EditText
+        android:id="@+id/signup_phone_edit"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_toRightOf="@+id/enter_signup_phone"
+        android:layout_alignBaseline="@+id/enter_signup_phone"
+        android:layout_alignBottom="@+id/enter_signup_phone">
+    </EditText>
+
+    <TextView
+        android:id="@+id/enter_signup_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/enter_signup_phone"
+        android:layout_alignRight="@+id/enter_signup_phone"
+        android:layout_below="@+id/enter_signup_phone"
+        android:layout_marginTop="30dp"
+        android:text="@string/Enter_email"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/signup_email_edit"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_toRightOf="@+id/enter_signup_email"
+        android:layout_alignBaseline="@+id/enter_signup_email"
+        android:layout_alignBottom="@+id/enter_signup_email"
+        android:layout_alignLeft="@+id/signup_phone_edit">
+    </EditText>
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        android:text="@string/signup" />
+
+</RelativeLayout>

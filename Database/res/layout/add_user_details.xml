@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/hatshuana_bg"
+    android:orientation="vertical" >
+
+       <TextView
+        android:id="@+id/enteruserdetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dip"
+		android:gravity="center"
+		android:textColor="@color/black"
+		android:textSize="20dip"
+		android:textStyle="bold"
+        android:text="@string/enter_user_details" />
+    
+    <TextView
+        android:id="@+id/enter_user_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/enter_user_phone"
+        android:layout_below="@+id/enteruserdetails"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/enter_user_car"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/edit_user_car"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/enter_user_car"
+        android:layout_alignBaseline="@+id/enter_user_car"
+        android:layout_alignLeft="@+id/edit_user_phone"
+        android:layout_alignBottom="@+id/enter_user_car">
+    </EditText>
+
+    <TextView android:id="@+id/enter_user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_user_car"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="@string/Enter_user_phone" />
+     <EditText
+        android:id="@+id/edit_user_phone"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_toRightOf="@+id/enter_user_phone"
+        android:layout_alignBaseline="@+id/enter_user_phone"
+        android:layout_alignBottom="@+id/enter_user_phone"
+        android:layout_alignLeft="@+id/signup_phone_edit">
+    </EditText>
+
+    <TextView
+        android:id="@+id/enter_user_bike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/enter_user_phone"
+        android:layout_alignRight="@+id/enter_user_phone"
+        android:layout_below="@+id/enter_user_phone"
+        android:layout_marginTop="30dp"
+        android:text="@string/enter_user_bike"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/edit_user_bike"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/enter_user_bike"
+        android:layout_alignBaseline="@+id/enter_user_bike"
+        android:layout_alignBottom="@+id/enter_user_bike"
+        android:layout_alignLeft="@+id/edit_user_phone" >
+    </EditText>
+
+    <Button
+        android:id="@+id/button_add_userdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:text="@string/adduserdetails" />
+
+</RelativeLayout>

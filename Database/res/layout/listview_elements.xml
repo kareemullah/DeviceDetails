@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:paddingLeft="5dip"
+  android:paddingTop="5dip"
+  android:background="@drawable/panel">
+    
+    <TextView android:id="@+id/listview_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="4dip"
+        android:textSize="18dip"
+        android:textColor="@color/black"
+        />
+    
+    <TextView android:id="@+id/listview_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/listview_text1"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="6dip"
+        android:textSize="18dip"
+        android:textColor="@color/black"
+        />
+    
+    <TextView android:id="@+id/listview_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listview_text2"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="6dip"
+        android:textSize="18dip"
+        android:textColor="@color/black"
+        />
+    
+    <Button android:id="@+id/modify_button"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/listview_text3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tips_button_bg"
+        android:text="@string/modify_butt"/>
+    
+    <Button android:id="@+id/delete_button"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/listview_text3"
+        android:layout_toRightOf="@+id/modify_button"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/tips_button_bg"
+        android:text="@string/delete_butt" />   
+         
+</RelativeLayout>

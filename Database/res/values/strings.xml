@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DatabaseActivity!</string>
+    <string name="app_name">Database</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="Enter_pass">Enter Password</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="enter_user_car">Car Name</string>
+    <string name="Enter_user_phone">Phone Number</string>
+    <string name="enter_user_bike">Bike Name</string>
+    <string name="enter_user_details">Enter User Details</string>
+    <string name="Enter_email">Enter e-mail</string>
+    <string name="Enter_phone">Enter Phone No</string>
+    <string name="Enter_address">Enter Address</string>
+    <string name="Add_Details">Add Details</string>
+    <string name="View_Details">View Details</string>
+    <string name="adduserdetails">Add User Details</string>
+    <string name="adduserdetails_save">Save</string>
+    <string name="adduserdetails_cancel">Cancel</string>
+    <string name="modify_butt">Modify</string>
+    <string name="delete_butt">Delete</string>
+    
+    <color name = "black">#000000</color>
+	<color name = "white">#ffffff</color>
+	<color name="ivory">#cdcdc1</color>
+	<color name="green">#66FF00</color>
+	<color name="sticky">#fc2cac</color>
+	<color name="navyblack">#808080</color>
+	<color name="txt_color">#9c8c68</color>
+	<color name="yellow">#ffd700</color>
+	<color name="blue">#0000cd</color>
+	<color name="NavajoWhite">#ffdead</color>
+	<color name="pink">#990099</color>
+</resources>
